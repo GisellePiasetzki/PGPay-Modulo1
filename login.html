@@ -13,22 +13,25 @@
 </head>
 <body>
 
+  <header><img src="./assets/PG-text-white-bg-blue.svg" alt=""></header>
 
   <form id="login">
 
     <legend>Faça seu login</legend>
     
     <fieldset>
+
       <div class="input-wrapper">
         <label for="cpf">CPF</label>
         <input type="number" name="cpf" id="cpf" required autofocus>
       </div>
       <div class="input-wrapper">
         <label for="senha">Senha</label>
-        <input type="password" name="senha" id="senha" required>
+        <input type="password" name="senha" id="senha" maxlength="8" required>
       </div>
 
       <button type="submit">Continuar</button>
+
     </fieldset>
 
     <footer>
