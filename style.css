@@ -98,3 +98,74 @@ nav button {
 
 }
 
+.reasons-choice{
+  height: 30vh;
+}
+
+.card-reasons{
+  margin-right: 60px;
+    margin-left: 60px
+}
+.card{
+  border: none !important;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+
+
+.card-body {
+  padding: 3rem !important;
+  display: flex;
+    flex-direction: column;
+    gap: 12px
+}
+
+.card-body img{
+  width: 50px;
+}
+
+.text-reasons{
+  display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.text-reasons h2{
+  color: var(--bg-secondary);
+}
+
+.text-reasons .color-reasons{
+  color: var(--bg-primary);
+}
+
+#countries-banner .image-countries{
+  width: 100%;
+  
+}
+.text-countries{
+ display: flex;
+ flex-direction: column;
+ align-items: center;
+}
+.text-countries div{
+  width: 60%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.text-countries h2{
+  text-align: center;
+  margin-top: 12px;
+}
+
+.text-countries p{
+  text-align: center;
+  width: 70%;
+  margin-top: 12px;
+}
+
+
+.text-countries h5{
+  color: var(--bg-primary);
+  
+}
