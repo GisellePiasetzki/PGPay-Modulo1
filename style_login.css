@@ -1,8 +1,6 @@
 :root{
 --bg-primary: #0057ff;
 --bg-secondary: #24d278;
-
-
 }
 
 * {
@@ -22,26 +20,31 @@ body, button {
 font-family: 'Poppins', sans-serif;
 }
 
+header {
+  position: fixed;
+  bottom: 20px;
+  left: 20px;
+}
+
 form {
   box-sizing: border-box;
-  width: 300px;
-  height: 400px;
+  width: 400px;
+  height: 500px;
   margin: 0 auto;
-  padding: 30px 50px;
-
-  position: absolute;
-  top:50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+  padding: 50px 50px;
 
   background: #FFFFFF;
   border-radius: 10px;
   
-
   display: flex;
   flex-direction: column;
-  gap: 30px;
-  
+  gap: 50px;
+
+  /*centralizar na página*/
+  position: absolute;
+  top:50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 
 fieldset {
@@ -60,18 +63,29 @@ form legend {
   gap: 5px;
 
   margin-bottom: 10px;
-
   width: 100%;
 }
 
 input {
+  height: 35px;
   padding: 5px;
   border: 0px;
   border-bottom: 1px dotted black;
+
+  font-size: 15px;
+  color: rgb(100, 99, 99);
+}
+
+input[type=number]::-webkit-inner-spin-button, 
+input[type=number]::-webkit-outer-spin-button { 
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none; 
 }
 
 input:focus {
   outline: none;
+  background-color: rgba(212, 209, 209, 0.356);
 }
 
 input:active{
@@ -79,23 +93,24 @@ input:active{
 }
 
 input:not(:placeholder-shown) {
-  border-color: red;
+  border-color: rgb(199, 34, 34);
 }
 
 input:valid {
-  border-color: black;
+  border-color: rgb(126, 126, 126);
 }
 
 label {
-  font-size: 12px;
+  font-size: 16px;
+  color: rgba(153, 153, 153, 0.89);
 }
 
 button {
-  margin-top: 10px;
-  height: 60px;
+  margin-top: 30px;
+  height: 70px;
   width: 100%;
 
-  font-size: 18px;
+  font-size: 16px;
   font-weight: 600;
   color:  rgb(224, 223, 223);
 
@@ -107,12 +122,17 @@ button {
 button:hover, button:focus {
   border-color: var(--bg-secondary);
   color: var(--bg-secondary);
+  outline: none;
+  cursor: pointer;
 }
 
 footer {
+  margin-top: -20px;
   text-align: center;
-  font-size: 12px;
-  margin-top: 20px;
+  font-size: 13px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
 }
 
 footer a {
@@ -121,4 +141,9 @@ footer a {
   text-decoration: none;
   color: var(--bg-secondary);
   font-weight: 600;
+}
+
+footer a:focus {
+  outline: none;
+  color: #1ba35d;
 }
