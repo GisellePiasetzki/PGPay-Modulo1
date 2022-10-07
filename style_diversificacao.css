@@ -2,14 +2,18 @@
     --bg-primary: #0057ff;
     --bg-secondary: #24d278;
   }
-  
-  body {
+
+body {
     /* height: 100vh;
     width: 100vw; */
-    background-image: linear-gradient(45deg, var(--bg-primary), var(--bg-secondary));
-    color: white;
+  
     font-family: 'Poppins', sans-serif;
   }
+
+  header {
+    background-image: linear-gradient(45deg, var(--bg-primary), var(--bg-secondary));
+  }
+  
   
   .imagem {
     text-align: center;
@@ -27,24 +31,12 @@
 
   nav {
     text-align: center;
+    background-image: linear-gradient(45deg, var(--bg-primary), var(--bg-secondary));
   }
     
   
   nav a {
     text-decoration: none;
-    color: darkgreen
+    color: black
   }
-  
-
-    
-  
-   
-
-
-
-
-    
-
-  
-
   
