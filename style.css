@@ -142,6 +142,7 @@ nav button {
 
 .text-reasons h2{
   color: var(--bg-secondary);
+  margin-top: 12px;
 }
 
 .text-reasons .color-reasons{
@@ -200,6 +201,44 @@ nav button {
   background-color: var(--bg-primary);
   flex:1;
   border-radius: 50px;
+  display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.invoice-examples ul{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 40px;
+  margin-bottom: 0;
+
+}
+
+
+
+
+.invoice-examples li{
+  background-color: white;
+  display: flex;
+  justify-content: space-between;
+  border-radius: 10px;
+  padding: 8px 16px;
+  width: 130%;
+}
+
+.invoice-examples li img{
+  width: 50px;
+}
+
+.invoice-examples li p{
+  font-weight: bold;
+  align-self: center;
+}
+
+.invoice-examples li .expenses p{
+  opacity: 0.8;
+  font-weight: normal;
 }
 
 
@@ -212,8 +251,42 @@ nav button {
   color: white;
   font-weight: bold;
   border-radius: 5px;
-  padding: 9px;
+  padding: 9px 16px;
   width: 90px;
   border: none;
   font-size: 18px;
+}
+
+#invoice-login .invoice-login-content{
+  display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.invoice-login-itens-check {
+  display: flex;
+    flex-direction: column;
+    gap: 18px;
+}
+
+
+.invoice-login-content h5{
+  color: var(--bg-primary);
+}
+
+.invoice-login-content h2{
+  font-weight: bold;
+}
+
+.invoice-login-content h5 span{
+  color: var(--bg-secondary);
+}
+.invoice-login-itens-check div {
+  display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.invoice-login-itens-check p{
+  margin-bottom: 0;
 }
