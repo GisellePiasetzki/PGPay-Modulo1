@@ -26,6 +26,14 @@ header{
 
 }
 
+.navbar-light .navbar-toggler-icon {
+  background-image: url(./assets/icon-list.svg) !important;
+}
+
+.navbar-light .navbar-toggler {
+  color: rgba(0,0,0,.55);
+  border-color: rgba(0,0,0,.0) !important;
+}
 
 .navbar>.container-fluid{
   height: 99px;
@@ -87,7 +95,7 @@ nav button {
 
 .text-banner {
   max-width: 491px;
-  margin-top: 60px;
+  margin-top: 100px;
   color: white;
 }
 .text-banner h2{
@@ -162,7 +170,7 @@ nav button {
  display: flex;
  flex-direction: column;
  align-items: center;
- margin-top: 50px;
+ margin-top: 57px;
 }
 .text-countries div{
   width: 60%;
