@@ -352,3 +352,42 @@ nav button {
   border: none;
   font-size: 18px;
 }
+
+footer{
+  display: flex;
+  flex-direction: column;
+  border-top: 3px solid var(--bg-primary);
+}
+
+footer p {
+  margin: 0;
+}
+
+.copy{
+  display: flex;
+  color: white;
+  padding: 32px 0;
+  background-color: var(--bg-primary);
+  justify-content: center;
+}
+
+.footer-info{
+  display: flex;
+  justify-content: space-between;
+  padding: 49px 100px;
+
+}
+
+.footer-info div{
+  max-width: 331px;
+}
+
+.social-icons{
+  display: flex;
+  flex-direction: row;
+  max-width: 5px;
+  gap: 10px;
+}
+.social-icons img{
+  max-width: 28px;
+}
