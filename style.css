@@ -28,6 +28,7 @@ header{
 
 
 .navbar>.container-fluid{
+  height: 99px;
   margin-left: 100px;
   margin-right: 100px;
 }
@@ -85,17 +86,17 @@ nav button {
 }
 
 .text-banner {
+  max-width: 491px;
   margin-top: 60px;
   color: white;
 }
 .text-banner h2{
   font-weight: bold;
-  font-size: 50px;
+  font-size: 45px;
 }
 
 .text-banner p{
-  line-height: 0.8;
-  margin-top: 20px;
+   margin-top: 20px;
 }
 
 .content-banner button{
@@ -161,6 +162,7 @@ nav button {
  display: flex;
  flex-direction: column;
  align-items: center;
+ margin-top: 50px;
 }
 .text-countries div{
   width: 60%;
@@ -356,6 +358,8 @@ nav button {
   font-size: 18px;
 }
 
+
+/* Footer CSS */
 footer{
   display: flex;
   flex-direction: column;

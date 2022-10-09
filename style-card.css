@@ -1,0 +1,99 @@
+@import url(./style.css);
+
+.banner {
+    background-color: var(--bg-primary);
+    height: 707px;
+    background-image: url(./assets/banner-card.png);
+    background-size: 100vw;
+}
+
+.container-cards {
+    display: flex;
+    justify-content: space-between;
+    margin: 0 100px;
+
+}
+
+.container-cards p,h5 {
+    margin: 0 0 0 10px;
+}
+
+.container-como-funciona {
+    display: flex;
+    justify-content: center;
+    margin-top: 100px;
+    margin-bottom: 50px;
+}
+.como-funciona {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--bg-primary);
+    width: 710px;
+    border-radius: 29px;
+    padding: 30px 0 70px 0 ;
+}
+
+.como-funciona h5{
+    color: white;
+    opacity: 43%;
+    font-size: 16px;
+    font-weight: 400;
+    margin: 0;
+}
+
+.como-funciona h2{
+    color: white;
+    font-weight: 700;
+    font-size: 1.8rem;
+}
+.passos {
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    border-radius: 25px;
+    width: 496px;
+    padding: 27px 24px;
+    gap: 40px;
+    margin-top: 15px;
+}
+
+
+.passos h5{
+    color: #393939;
+    opacity: 100%;
+    font-weight: 700;
+    font-size: 22px;
+}
+.number {
+    display: flex;
+    background-color: var(--bg-secondary);
+    height: 46px;
+    width: 46px;
+    border-radius: 50%;
+    align-items: center;
+    justify-content: center;
+}
+.number p{
+    font-size: 32px;
+    color: white;
+    margin: 0;
+    
+}
+
+.apps {
+    height: 57px;
+}
+
+.apps img {
+    background-color: #393939;
+    height: 57px;
+    border-radius:11px;
+}
+
+.passo-container {
+    display: flex;
+    flex-direction: column;
+    gap:10px
+}
