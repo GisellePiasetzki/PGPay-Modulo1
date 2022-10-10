@@ -367,6 +367,39 @@ nav button {
 }
 
 
+/* Blog Home CSS */
+
+#blog-home{
+  background-color: rgba(0, 106, 254, 15%);
+  padding-bottom: 10px;
+  padding-top: 10px;
+}
+
+#blog-home h2{
+  color: black;
+}
+
+#blog-home a{
+  text-decoration: none;
+  color: var(--bg-primary);
+}
+
+#blog-home h2 span{
+  color: #605B5B
+}
+
+
+#blog-home .card-body img{
+  width: 250px;
+  align-self: center;
+  border-radius: 5px;
+}
+
+
+
+
+
+
 /* Footer CSS */
 footer{
   display: flex;
