@@ -483,3 +483,31 @@ footer p {
 .social-icons img{
   max-width: 28px;
 }
+
+
+@media (max-width: 480px){
+
+  #home-banner{
+    background-image: url("assets/banner-home-mobile.png");
+
+  }
+
+  .image-countries img{
+    max-width: 100%;
+  }
+
+  #card-home .infos-card-home{
+    flex-direction: column-reverse;
+  }
+
+  .image-card-home img {
+    width: 500px;
+  }
+  #invoice .invoice-content{
+    flex-direction: column;
+  }
+
+  .footer-info{
+    flex-direction: column;
+  }
+}
