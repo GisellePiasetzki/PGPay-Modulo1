@@ -1,39 +1,54 @@
-:root{
-    --bg-primary: #0057ff;
-    --bg-secondary: #24d278;
-  }
-  
-  body {
-    /* height: 100vh;
-    width: 100vw; */
-    background-image: linear-gradient(45deg, var(--bg-primary), var(--bg-secondary));
-    color: white;
-    font-family: 'Poppins', sans-serif;
-  }
-  
-  .imagem {
-    text-align: center;
-  }
 
-  .imagem img {
-    border-radius: 15px;
-    width: 322px;
-  }
 
-  h2{
-    font-size: 50px;
-    text-align: center;
-  }
+* {
+  padding: 0;
+  margin: 0;
+}
 
-  nav {
-    text-align: center;
-  }
-    
-  
-  nav a {
-    text-decoration: none;
-    color: darkgreen
-  }
+body {
+  font-family: 'Poppins', sans-serif;
+}
+
+h1 {
+  height: 68px;
+  font-size: 45px;
+  font-style: bold;
+  text-align: center;
+  line-height: 68px;
+  vertical-align: top;
+  color: #393939;
+  margin-bottom: 58px;
+}
+
+.imagem {
+  text-align: center;
+}
+
+.imagem img {
+  width: 897px;
+  height: 590px;
+  top: 58px;
+  left: 271.5px;
+  margin-bottom: 110px;
+}
+
+.texto p {
+  top: 1440px;
+  padding: 10px 280px;
+  gap: 10px;
+}
+
+.texto ul {
+  padding: 10px 280px;
+  gap: 10px;
+}
+
+footer {
+  margin-top: 110px;
+}
+
+
+
   
 
     
