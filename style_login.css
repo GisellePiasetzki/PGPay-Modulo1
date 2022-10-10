@@ -1,6 +1,7 @@
 :root{
 --bg-primary: #0057ff;
 --bg-secondary: #24d278;
+--bg-terciary: #002f80;
 }
 
 * {
@@ -12,8 +13,10 @@
 body {
   height: 100vh;
   width: 100vw;
-  background-image: linear-gradient(45deg, var(--bg-primary) , var(--bg-secondary));
   position: relative;
+  background-size: 500% 100%;
+  background-image: linear-gradient(45deg, var(--bg-primary) , var(--bg-terciary));
+  animation: degadre_animation 3s infinite alternate;
 }
 
 body, button {
@@ -22,7 +25,7 @@ font-family: 'Poppins', sans-serif;
 
 header {
   position: fixed;
-  bottom: 20px;
+  top: 20px;
   left: 20px;
 }
 
@@ -112,18 +115,19 @@ button {
 
   font-size: 16px;
   font-weight: 600;
-  color:  rgb(224, 223, 223);
+  color: var(--bg-secondary);
 
   border-radius: 10px;
-  border: 1px solid rgb(224, 223, 223);
+  border: 1px solid var(--bg-secondary);
   background-color: transparent;
 }
 
 button:hover, button:focus {
-  border-color: var(--bg-secondary);
-  color: var(--bg-secondary);
+  color: white;
   outline: none;
   cursor: pointer;
+  background-color: var(--bg-secondary);
+
 }
 
 footer {
@@ -146,4 +150,16 @@ footer a {
 footer a:focus, footer a:hover {
   outline: none;
   color: #1ba35d;
+}
+
+/* ANIMAÇÕES */
+
+@keyframes degadre_animation {
+  0% {
+    background-position-x: 0%;
+  }
+
+  100%{
+    background-position-x: 100%;
+  }
 }
