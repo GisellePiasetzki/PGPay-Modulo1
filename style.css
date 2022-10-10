@@ -395,6 +395,50 @@ nav button {
   border-radius: 5px;
 }
 
+/* section Cell CSS */
+#app-home {
+  padding: 50px;
+  display: flex;
+  justify-content: center;
+
+}
+
+#app-home .image-cell-home{
+  flex: 1;
+}
+
+#app-home .cell-button{
+  flex: 1;
+  color: white;
+}
+
+#app-home .cell-button h2 {
+  margin-left: 5px;
+  margin-bottom: 26px
+}
+
+#app-home .cell-button button{
+  font-weight: bold;
+  border: none;
+  color: white;
+  padding: 10px;
+  background-color: var(--bg-primary);
+  box-shadow: rgba(0, 0, 0, 0.07) 0px 1px 2px, rgba(0, 0, 0, 0.07) 0px 2px 4px, rgba(0, 0, 0, 0.07) 0px 4px 8px, rgba(0, 0, 0, 0.07) 0px 8px 16px, rgba(0, 0, 0, 0.07) 0px 16px 32px, rgba(0, 0, 0, 0.07) 0px 32px 64px;
+
+}
+
+#app-home .cell-button img{
+  width: 30px;
+}
+
+#app-home .background-cell {
+  background-color: var(--bg-primary);
+  width: 60%;
+  height: 30vh;
+  border-radius: 50px;
+  display: flex;
+  align-items: center;
+}
 
 
 
