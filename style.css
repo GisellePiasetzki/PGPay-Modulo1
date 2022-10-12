@@ -151,7 +151,8 @@ nav button:hover{
   padding: 3rem !important;
   display: flex;
     flex-direction: column;
-    gap: 12px
+    gap: 12px;
+    height: 400px;
 }
 
 .card-body img{
@@ -390,13 +391,14 @@ nav button:hover{
 
 #blog-home{
   background-color: rgba(0, 106, 254, 15%);
-  padding-bottom: 10px;
-  padding-top: 10px;
+  padding-bottom: 50px;
+  padding-top: 50px;
 }
 
 #blog-home h2{
   color: black;
   width: 90%;
+  margin-bottom: 30px;
 }
 
 #blog-home a{
