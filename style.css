@@ -37,8 +37,9 @@ header{
 }
 
 .navbar-light .navbar-toggler {
-  color: rgba(0,0,0,.55);
+  color: transparent !important;
   border-color: rgba(0,0,0,.0) !important;
+  border: none;
 }
 
 .navbar>.container-fluid{
@@ -77,8 +78,7 @@ nav button {
 }
 
 nav button:hover{
-  background-color: white;
-  border: 5px solid var(--bg-secondary);
+  background-color: #0241c0;
 }
 
 /*CSS Banner Home*/
@@ -155,7 +155,8 @@ nav button:hover{
   padding: 3rem !important;
   display: flex;
     flex-direction: column;
-    gap: 12px
+    gap: 12px;
+    height: 400px;
 }
 
 .card-body img{
@@ -394,13 +395,14 @@ nav button:hover{
 
 #blog-home{
   background-color: rgba(0, 106, 254, 15%);
-  padding-bottom: 10px;
-  padding-top: 10px;
+  padding-bottom: 50px;
+  padding-top: 50px;
 }
 
 #blog-home h2{
   color: black;
   width: 90%;
+  margin-bottom: 30px;
 }
 
 #blog-home a{
@@ -521,6 +523,7 @@ footer p {
 .social-icons{
   display: flex;
   flex-direction: row;
+  justify-content: center;
   max-width: 5px;
   gap: 10px;
 }
@@ -578,11 +581,18 @@ footer p {
 
   .footer-info{
     flex-direction: column;
+    gap: 20px;
+    text-align: center;
   }
 
   .navbar>.container-fluid {
-    margin-left: 0;
-    margin-right: 0;
+    height: 99px;
+    margin-left: 30px;
+    margin-right: 30px;
+}
+  .container-fluid{
+    padding-left: 0 !important;
+    padding-right: 0 !important;
   }
   .navbar-collapse{
     background-color: var(--bg-secondary);
@@ -615,4 +625,12 @@ footer p {
     margin-bottom: 18px;
   }
   
+  .social-icons {
+    justify-content: center;
+  }
+
+  footer a{
+    text-decoration: none;
+    color: black;
+  }
 }
