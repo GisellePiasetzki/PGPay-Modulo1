@@ -228,7 +228,7 @@ nav button {
   flex-direction: column;
   align-items: center;
   gap: 40px;
-  
+  padding: 0;
   margin-top: 20px;
 
 }
@@ -346,6 +346,7 @@ nav button {
 
 .card-home-login{
   flex: 1;
+  margin-bottom: 10px;
 }
 
 .card-home-login h6 {
@@ -381,6 +382,7 @@ nav button {
 
 #blog-home h2{
   color: black;
+  width: 90%;
 }
 
 #blog-home a{
@@ -422,6 +424,11 @@ nav button {
 }
 
 #app-home .cell-button button{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 180px;
+  height: 70px;
   font-weight: bold;
   border: none;
   color: white;
@@ -430,6 +437,12 @@ nav button {
   box-shadow: rgba(0, 0, 0, 0.07) 0px 1px 2px, rgba(0, 0, 0, 0.07) 0px 2px 4px, rgba(0, 0, 0, 0.07) 0px 4px 8px, rgba(0, 0, 0, 0.07) 0px 8px 16px, rgba(0, 0, 0, 0.07) 0px 16px 32px, rgba(0, 0, 0, 0.07) 0px 32px 64px;
 
 }
+
+#app-home .cell-button .buttons-app{
+  display: flex;
+  gap: 12px;
+}
+
 
 #app-home .cell-button img{
   width: 30px;
@@ -558,6 +571,22 @@ footer p {
     display: inline-block;
     background-color: var(--bg-primary);
     color: var(--bg-secondary);
+  }
+  #app-home .background-cell {
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+  }
+  #app-home .cell-button h2 {
+    text-align: center;
+  }
+  #app-home .cell-button{
+    margin-right: 0;
+  }
+  #app-home .cell-button .buttons-app{
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 18px;
   }
   
 }
