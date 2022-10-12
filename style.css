@@ -619,4 +619,9 @@ footer p {
   .social-icons {
     justify-content: center;
   }
+
+  footer a{
+    text-decoration: none;
+    color: black;
+  }
 }
