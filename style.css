@@ -68,8 +68,13 @@ nav button {
   width: 90px;
   border: none;
   font-size: 18px;
-
 }
+
+nav button:hover{
+  background-color: white;
+  border: 5px solid var(--bg-secondary);
+}
+
 /*CSS Banner Home*/
 
 #home-banner{
@@ -109,15 +114,23 @@ nav button {
 
 .content-banner button{
   background-color: var(--bg-secondary);
+  border: 5px solid var(--bg-secondary);
   color: var(--bg-primary);
   font-weight: bold;
-  border: none;
   border-radius: 5px;
   padding: 18px;
   margin-top: 30px;
   box-shadow: rgba(0, 0, 0, 0.07) 0px 1px 2px, rgba(0, 0, 0, 0.07) 0px 2px 4px, rgba(0, 0, 0, 0.07) 0px 4px 8px, rgba(0, 0, 0, 0.07) 0px 8px 16px, rgba(0, 0, 0, 0.07) 0px 16px 32px, rgba(0, 0, 0, 0.07) 0px 32px 64px;
 
 }
+.button-banner .button-login{
+  display: none;
+}
+.content-banner button:hover{
+  background-color: white;
+  border: 5px solid var(--bg-secondary);
+}
+
 /*CSS "Razões para escolher PGPay"*/
 
 .reasons-choice{
@@ -224,7 +237,7 @@ nav button {
   flex-direction: column;
   align-items: center;
   gap: 40px;
-  
+  padding: 0;
   margin-top: 20px;
 
 }
@@ -269,6 +282,11 @@ nav button {
   width: 90px;
   border: none;
   font-size: 18px;
+}
+
+#invoice button:hover, #card-home button:hover{
+  background-color: var(--bg-secondary);
+  color:var(--bg-primary);
 }
 
 #invoice-login .invoice-login-content{
@@ -342,6 +360,7 @@ nav button {
 
 .card-home-login{
   flex: 1;
+  margin-bottom: 10px;
 }
 
 .card-home-login h6 {
@@ -377,11 +396,17 @@ nav button {
 
 #blog-home h2{
   color: black;
+  width: 90%;
 }
 
 #blog-home a{
   text-decoration: none;
   color: var(--bg-primary);
+  font-size: bold;
+}
+
+#blog-home a:hover{
+  color: var(--bg-secondary);
 }
 
 #blog-home h2 span{
@@ -412,12 +437,22 @@ nav button {
   color: white;
 }
 
+#app-home .cell-button button:hover{
+  background-color: var(--bg-secondary);
+}
+
 #app-home .cell-button h2 {
   margin-left: 5px;
   margin-bottom: 26px
 }
 
 #app-home .cell-button button{
+  display: flex;
+  align-items: center;
+  border-radius: 5px;
+  justify-content: center;
+  width: 180px;
+  height: 70px;
   font-weight: bold;
   border: none;
   color: white;
@@ -426,6 +461,12 @@ nav button {
   box-shadow: rgba(0, 0, 0, 0.07) 0px 1px 2px, rgba(0, 0, 0, 0.07) 0px 2px 4px, rgba(0, 0, 0, 0.07) 0px 4px 8px, rgba(0, 0, 0, 0.07) 0px 8px 16px, rgba(0, 0, 0, 0.07) 0px 16px 32px, rgba(0, 0, 0, 0.07) 0px 32px 64px;
 
 }
+
+#app-home .cell-button .buttons-app{
+  display: flex;
+  gap: 12px;
+}
+
 
 #app-home .cell-button img{
   width: 30px;
@@ -489,7 +530,33 @@ footer p {
 
   #home-banner{
     background-image: url("assets/banner-home-mobile.png");
+    background-attachment: inherit;
+    height: 50vh;
+  }
 
+  #home-banner .content-banner{
+    align-items: center;
+    width: 100%;
+    margin-left: 0px;
+    justify-content: flex-start;
+  }
+
+  #home-banner .content-banner h2{
+    font-size: 28px;
+  }
+
+  #home-banner .content-banner p {
+    font-size: 18px;
+  }
+
+  #home-banner .content-banner button{
+    padding: 10px 18px;
+    margin-top: 0;
+  }
+
+  #home-banner .content-banner .text-banner{
+    margin-left: 20px;
+    margin-top: 0;
   }
 
   .image-countries img{
@@ -501,7 +568,7 @@ footer p {
   }
 
   .image-card-home img {
-    width: 500px;
+    width: 100%;
   }
   #invoice .invoice-content{
     flex-direction: column;
@@ -510,4 +577,40 @@ footer p {
   .footer-info{
     flex-direction: column;
   }
+
+  .navbar>.container-fluid {
+    margin-left: 0;
+    margin-right: 0;
+  }
+  .navbar-collapse{
+    background-color: var(--bg-secondary);
+    border-radius: 5px;
+  }
+  .navbar-expand-lg .navbar-nav{
+    margin-left: 10px;
+    gap: 15px
+  }
+ 
+  .button-banner .button-login{
+    display: inline-block;
+    background-color: var(--bg-primary);
+    color: var(--bg-secondary);
+  }
+  #app-home .background-cell {
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+  }
+  #app-home .cell-button h2 {
+    text-align: center;
+  }
+  #app-home .cell-button{
+    margin-right: 0;
+  }
+  #app-home .cell-button .buttons-app{
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 18px;
+  }
+  
 }

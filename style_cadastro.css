@@ -1,0 +1,175 @@
+:root{
+  --bg-primary: #0057ff;
+  --bg-secondary: #24d278;
+  --bg-terciary: #002f80;
+}
+  
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body, button {
+  font-family: 'Poppins', sans-serif;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  /* background-image: linear-gradient(90deg, var(--bg-primary) , white); */
+}
+
+
+header {
+  text-align: center;
+}
+
+h1 {
+margin-top: 50px;  
+color: var(--bg-secondary);
+}
+
+form {
+  margin: 0px auto;
+  padding: 50px 100px;
+  
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+
+  /* centralizar na página */
+  /* position: absolute;
+  top:50%;
+  left: 50%;
+  transform: translate(-50%, -50%); */
+}
+
+fieldset {
+  border: none;
+}
+
+form legend {
+  font-size: 20px;
+  font-weight: 600;
+  text-align: center;
+}
+
+.input-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+
+  margin-bottom: 10px;
+  width: 100%;
+}
+
+.checkbox-wrapper {
+  display: flex;
+  gap: 20px;
+  align-items: flex-start;
+}
+
+.checkbox-wrapper:last-child {
+  margin-top: 20px;
+}
+
+input[type="checkbox"]{
+  scale: 1.2;
+  accent-color: var(--bg-secondary);
+}
+
+input {
+  height: 35px;
+  padding: 5px;
+  border: 0px;
+  border-bottom: 1px solid rgb(117, 116, 116);
+
+  font-size: 15px;
+  color: rgb(100, 99, 99);
+}
+
+input[type=number]::-webkit-inner-spin-button, 
+input[type=number]::-webkit-outer-spin-button { 
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none; 
+}
+
+input:focus, input:hover {
+  outline: none;
+  background-color: transparent;
+  border-width: 2px;
+}
+
+input:active{
+  border: none;
+}
+
+label {
+  font-size: 16px;
+  color: rgba(153, 153, 153, 0.89);
+}
+
+button {
+  margin-top: 30px;
+  height: 70px;
+  width: 100%;
+
+  font-size: 16px;
+  font-weight: 600;
+  color: var(--bg-secondary);
+
+  border-radius: 10px;
+  border: 1px solid var(--bg-secondary);
+  background-color: transparent;
+}
+
+button:hover, button:focus {
+  color: white;
+  outline: none;
+  cursor: pointer;
+  background-color: var(--bg-secondary);
+
+}
+
+@media (min-width: 800px) {
+
+  body {
+    flex-direction: row;
+  }
+  
+  header {
+    width: 45%;
+    height: 100vh;
+    margin: 0 auto;
+    background-image: url("assets/cell-home.png");
+    background-repeat: no-repeat;
+    background-position: bottom left;
+    background-color: var(--bg-primary);
+    flex: 2;
+  }
+  
+  h1 {
+    position: relative;
+    top: 15%;
+    margin-top: 0px;
+  
+    font-size: 45px;
+    color: white;
+    
+  }
+
+  form {
+    width: 40%;
+    margin: 0px auto;
+    padding: 80px 150px;
+    
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+}
+
+}

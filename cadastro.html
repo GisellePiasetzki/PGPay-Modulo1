@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cadastro - PGPay</title>
+  
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style_cadastro.css">
+</head>
+<body>
+  <header>
+    <h1>Quero ser PGPay!</h1>
+  </header>
+
+  <form action="">
+
+    <fieldset>
+      <div class="input-wrapper">
+        <label for="cpf">CPF</label>
+        <input type="number" name="cpf" id="cpf" required autofocus>
+      </div>
+      <div class="input-wrapper">
+        <label for="nome_completo">Nome completo</label>
+        <input type="text" name="nome_completo" id="nome_completo" required>
+      </div>
+      <div class="input-wrapper">
+        <label for="celular">Celular</label>
+        <input type="number" name="celular" id="celular" required>
+      </div>
+      <div class="input-wrapper">
+        <label for="email">E-mail</label>
+        <input type="email" name="email" id="email" required>
+      </div>
+    </fieldset>
+    
+    <fieldset>
+      <div class="checkbox-wrapper">
+        <input type="checkbox" id="termos" name="termos" value="termos" required>
+        <label for="termos"> Eu li, estou ciente das condições de tratamento dos meus dados pessoais e dou meu consentimento, quando aplicável conforme descrito nesta Política de Privacidade.</label>
+      </div>
+      <div class="checkbox-wrapper">
+        <input type="checkbox" id="comunicacao" name="comunicacao" value="comunicacao">
+        <label for="comunicacao">Aceito receber comunicações do PGPay por e-mail</label>
+      </div>
+    </fieldset>
+    
+    <button type="submit">Enviar</button>
+  </form>
+</body>
