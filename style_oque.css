@@ -7,9 +7,60 @@
 body {
   font-family: 'Poppins', sans-serif;
 }
+/*CSS Header*/
+
+header{
+  float: left;
+  width: 100%;
+
+}
+
+.navbar-light .navbar-toggler-icon {
+  background-image: url(./assets/icon-list.svg) !important;
+}
+
+.navbar-light .navbar-toggler {
+  color: rgba(0,0,0,.55);
+  border-color: rgba(0,0,0,.0) !important;
+}
+
+.navbar>.container-fluid{
+  height: 99px;
+  margin-left: 100px;
+  margin-right: 100px;
+}
+
+.navbar-light .navbar-nav .nav-link {
+  color: white!important;
+}
+
+.navbar-light .navbar-nav .nav-link:hover {
+  background-color: var(--bg-secondary);
+  border-radius: 5px;
+}
+
+
+.navbar-expand-lg .navbar-nav {
+  gap: 32px;
+}
+.navbar-collapse{
+  flex-grow: 0 !important;
+}
+
+
+nav button {
+  background-color: var(--bg-secondary);
+  color: var(--bg-primary);
+  font-weight: bold;
+  border-radius: 5px;
+  padding: 9px;
+  width: 90px;
+  border: none;
+  font-size: 18px;
+
+}
 
 h1 {
-  height: 68px;
   font-size: 45px;
   font-style: bold;
   text-align: center;
