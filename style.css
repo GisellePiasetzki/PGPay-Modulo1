@@ -68,8 +68,13 @@ nav button {
   width: 90px;
   border: none;
   font-size: 18px;
-
 }
+
+nav button:hover{
+  background-color: white;
+  border: 5px solid var(--bg-secondary);
+}
+
 /*CSS Banner Home*/
 
 #home-banner{
@@ -109,9 +114,9 @@ nav button {
 
 .content-banner button{
   background-color: var(--bg-secondary);
+  border: 5px solid var(--bg-secondary);
   color: var(--bg-primary);
   font-weight: bold;
-  border: none;
   border-radius: 5px;
   padding: 18px;
   margin-top: 30px;
@@ -120,6 +125,10 @@ nav button {
 }
 .button-banner .button-login{
   display: none;
+}
+.content-banner button:hover{
+  background-color: white;
+  border: 5px solid var(--bg-secondary);
 }
 
 /*CSS "Razões para escolher PGPay"*/
@@ -275,6 +284,11 @@ nav button {
   font-size: 18px;
 }
 
+#invoice button:hover, #card-home button:hover{
+  background-color: var(--bg-secondary);
+  color:var(--bg-primary);
+}
+
 #invoice-login .invoice-login-content{
   display: flex;
     flex-direction: column;
@@ -388,6 +402,11 @@ nav button {
 #blog-home a{
   text-decoration: none;
   color: var(--bg-primary);
+  font-size: bold;
+}
+
+#blog-home a:hover{
+  color: var(--bg-secondary);
 }
 
 #blog-home h2 span{
@@ -418,6 +437,10 @@ nav button {
   color: white;
 }
 
+#app-home .cell-button button:hover{
+  background-color: var(--bg-secondary);
+}
+
 #app-home .cell-button h2 {
   margin-left: 5px;
   margin-bottom: 26px
@@ -426,6 +449,7 @@ nav button {
 #app-home .cell-button button{
   display: flex;
   align-items: center;
+  border-radius: 5px;
   justify-content: center;
   width: 180px;
   height: 70px;
