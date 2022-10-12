@@ -23,6 +23,12 @@ body, h1, h2, p, button {
 header{
   float: left;
   width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 5;
+  width: 100%;
+  box-shadow: 0px 0px 6px 0px rgb(0 0 0 / 50%);
 
 }
 
@@ -80,21 +86,19 @@ nav button:hover{
 #home-banner{
   background-image: url("assets/banner-home.png");
   background-size: 100vw;
-  background-position: center;
+  background-position: bottom;
   background-attachment: fixed;
   background-repeat: no-repeat;
-  background-position: right top;
   width: 100%;
   height: 70vh;
 }
 
 .content-banner{
   width: 40%;
-  height: 40vh;
   display: flex;
-  justify-content: center;
   flex-direction: column;
   align-items: flex-start;
+  margin-top: 100px;
   margin-left: 100px;
 }
 
@@ -126,7 +130,7 @@ nav button:hover{
 .button-banner .button-login{
   display: none;
 }
-.content-banner button:hover{
+.button-banner button:hover{
   background-color: white;
   border: 5px solid var(--bg-secondary);
 }
@@ -437,10 +441,6 @@ nav button:hover{
   color: white;
 }
 
-#app-home .cell-button button:hover{
-  background-color: var(--bg-secondary);
-}
-
 #app-home .cell-button h2 {
   margin-left: 5px;
   margin-bottom: 26px
@@ -460,6 +460,9 @@ nav button:hover{
   background-color: var(--bg-primary);
   box-shadow: rgba(0, 0, 0, 0.07) 0px 1px 2px, rgba(0, 0, 0, 0.07) 0px 2px 4px, rgba(0, 0, 0, 0.07) 0px 4px 8px, rgba(0, 0, 0, 0.07) 0px 8px 16px, rgba(0, 0, 0, 0.07) 0px 16px 32px, rgba(0, 0, 0, 0.07) 0px 32px 64px;
 
+}
+#app-home .cell-button button:hover{
+  background-color: var(--bg-secondary);
 }
 
 #app-home .cell-button .buttons-app{
@@ -531,7 +534,7 @@ footer p {
   #home-banner{
     background-image: url("assets/banner-home-mobile.png");
     background-attachment: inherit;
-    height: 50vh;
+    height: 45vh;
   }
 
   #home-banner .content-banner{
@@ -556,7 +559,6 @@ footer p {
 
   #home-banner .content-banner .text-banner{
     margin-left: 20px;
-    margin-top: 0;
   }
 
   .image-countries img{
