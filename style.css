@@ -518,6 +518,7 @@ footer p {
 .social-icons{
   display: flex;
   flex-direction: row;
+  justify-content: center;
   max-width: 5px;
   gap: 10px;
 }
@@ -576,6 +577,8 @@ footer p {
 
   .footer-info{
     flex-direction: column;
+    gap: 20px;
+    text-align: center;
   }
 
   .navbar>.container-fluid {
@@ -613,4 +616,7 @@ footer p {
     margin-bottom: 18px;
   }
   
+  .social-icons {
+    justify-content: center;
+  }
 }
