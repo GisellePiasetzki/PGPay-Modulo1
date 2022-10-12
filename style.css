@@ -31,8 +31,9 @@ header{
 }
 
 .navbar-light .navbar-toggler {
-  color: rgba(0,0,0,.55);
+  color: transparent !important;
   border-color: rgba(0,0,0,.0) !important;
+  border: none;
 }
 
 .navbar>.container-fluid{
@@ -71,8 +72,7 @@ nav button {
 }
 
 nav button:hover{
-  background-color: white;
-  border: 5px solid var(--bg-secondary);
+  background-color: #0241c0;
 }
 
 /*CSS Banner Home*/
