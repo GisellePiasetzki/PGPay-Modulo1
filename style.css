@@ -556,7 +556,7 @@ footer p {
   }
 
   #home-banner .content-banner .text-banner{
-    margin-left: 20px;
+    margin-left: 30px;
     margin-top: 0;
   }
 
@@ -582,8 +582,13 @@ footer p {
   }
 
   .navbar>.container-fluid {
-    margin-left: 0;
-    margin-right: 0;
+    height: 99px;
+    margin-left: 30px;
+    margin-right: 30px;
+}
+  .container-fluid{
+    padding-left: 0 !important;
+    padding-right: 0 !important;
   }
   .navbar-collapse{
     background-color: var(--bg-secondary);
