@@ -144,7 +144,8 @@ button:hover, button:focus {
     width: 45%;
     height: 100vh;
     margin: 0 auto;
-    background-image: url("assets/cell-home.png");
+    background-image: url("assets/img-cadastro1.png");
+    background-size: 100%;
     background-repeat: no-repeat;
     background-position: bottom left;
     background-color: var(--bg-primary);
@@ -153,11 +154,12 @@ button:hover, button:focus {
   
   h1 {
     position: relative;
-    top: 15%;
+    top: 10%;
     margin-top: 0px;
   
     font-size: 45px;
     color: white;
+    text-shadow: 2px 2px 10px rgb(128, 126, 126);
     
   }
 
