@@ -156,9 +156,13 @@ nav button:hover{
 .card-body {
   padding: 3rem !important;
   display: flex;
-    flex-direction: column;
-    gap: 12px;
-    height: 400px;
+  flex-direction: column;
+  gap: 12px;
+  height: 250px;
+}
+
+#blog-home .card-body{
+  height: 400px;
 }
 
 .card-body img{
@@ -433,6 +437,7 @@ nav button:hover{
   padding: 50px;
   display: flex;
   justify-content: center;
+  margin-bottom: 30px;
 
 }
 
@@ -455,7 +460,7 @@ nav button:hover{
   align-items: center;
   border-radius: 5px;
   justify-content: center;
-  width: 100%;
+  width: 200px;
   height: 70px;
   font-weight: bold;
   border: none;
