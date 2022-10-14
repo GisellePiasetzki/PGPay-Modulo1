@@ -105,6 +105,14 @@
     gap:10px
 }
 
+footer a {
+    text-decoration: none;
+    color: black;
+}
+footer a:hover {
+        color:var(--bg-secondary);
+}
+
 @media (min-width: 481px){
     .img-card-mobile {
         display: none;
