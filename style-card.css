@@ -90,9 +90,13 @@
 }
 
 .apps img {
-    background-color: #393939;
+    background-color: var(--bg-primary);
     height: 57px;
     border-radius:11px;
+}
+
+.apps img:hover{
+    background-color: var(--bg-secondary);
 }
 
 .passo-container {
